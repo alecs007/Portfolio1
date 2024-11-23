@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "header header header header header" "menu main main main main" "menu main main main main" "menu main main main main" "footer footer footer footer footer";
+  grid-template-rows: 7vh auto 1fr 1fr 5vh;
+  grid-template-columns: 15vw auto 1fr 1fr 1fr;
+}
+
+#header {
+  grid-area: header;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: fixed;
+  background: linear-gradient(90deg, rgba(0, 0, 255, 0.212), rgba(128, 0, 128, 0.212), rgba(0, 0, 255, 0.212), rgba(128, 0, 128, 0.212), rgba(0, 0, 255, 0.212), rgba(128, 0, 128, 0.212));
+}
+#header .home-button {
+  align-items: center;
+  padding: 2px 10px;
+  background-color: rgba(74, 145, 226, 0);
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 20px;
+  border: 2px solid black;
+  position: fixed;
+}
+#header .home-button .icon {
+  width: 70px;
+  height: 70px;
+}
+#header .home-button:hover {
+  background-color: rgba(98, 177, 109, 0.075);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+
+#menu {
+  grid-area: menu;
+  width: 15vw;
+  border-left: none;
+  background-color: rgba(248, 244, 244, 0.336);
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, blue, purple, blue);
+}
+
+#main {
+  grid-area: main;
+  border-right: none;
+}
+
+#footer {
+  grid-area: footer;
+  height: 5vh;
+  border: none;
+  background: linear-gradient(90deg, rgba(0, 0, 255, 0.212), rgba(128, 0, 128, 0.212), rgba(0, 0, 255, 0.212), rgba(128, 0, 128, 0.212), rgba(0, 0, 255, 0.212), rgba(128, 0, 128, 0.212));
+  background-size: cover;
+  background-position: center;
+}
+
+.rgb-border {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, blue, purple, blue);
+}
+
+.sidebar {
+  background-color: rgb(189, 67, 19);
+  width: 15vw;
+  margin: 0px 100px 0px 0px;
+}
+
+/*# sourceMappingURL=styes.css.map */
