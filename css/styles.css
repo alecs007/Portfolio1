@@ -149,7 +149,6 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
-  overflow: scroll;
 }
 #main .part1 button {
   border: 3px solid rgba(58, 6, 82, 0.507);
