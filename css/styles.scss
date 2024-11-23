@@ -212,6 +212,10 @@ body {
   border-image-source: linear-gradient(90deg, blue, purple, blue);
 }
 @media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   #header {
     .home-button {
       margin-left: 5px;
