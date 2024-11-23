@@ -149,6 +149,7 @@ body {
   border-top: none;
   border-left: none;
   border-right: none;
+  overflow: scroll;
 }
 #main .part1 button {
   border: 3px solid rgba(58, 6, 82, 0.507);
@@ -161,7 +162,7 @@ body {
   font-size: 100%;
   font-family: font3;
   color: rgba(0, 0, 0, 0.692);
-  overflow: hidden;
+  overflow: auto;
   letter-spacing: 2.5px;
   cursor: pointer;
 }
@@ -198,6 +199,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   #header .home-button {
     margin-left: 5px;
   }
